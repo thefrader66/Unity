@@ -6,8 +6,6 @@ public class BallRoll : MonoBehaviour
     public float force = 10f;
     private Rigidbody rb;
     private Vector3 startpostion;
-    float x = 0f;
-    float z = 0f;
     void Start()
     {
         startpostion = transform.position;
