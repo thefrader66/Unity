@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class BallRoll : MonoBehaviour
 {
     public float force = 10f;
+    public float jumpforce = 50f;
     private Rigidbody rb;
     private Vector3 startpostion;
     void Start()
@@ -23,6 +24,12 @@ public class BallRoll : MonoBehaviour
         if (kb.dKey.isPressed) x = 1f;
         if (kb.sKey.isPressed) z = -1f;
         if (kb.wKey.isPressed) z = 1f;
+
+        if(kb.spaceKey.isPressed)
+        {
+            rb.AddForce(-Vector3.down * jumpforce);
+
+        }
 
         Vector3 direction = new Vector3(x, 0f, z).normalized;
 

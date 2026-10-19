@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 972d36593ee4c5c4eaa41a2b2283a957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallRoll
-  force: 3
+  force: 10
 --- !u!114 &358553090
 MonoBehaviour:
   m_ObjectHideFlags: 0
